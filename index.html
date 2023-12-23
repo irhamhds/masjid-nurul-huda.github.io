@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASJID NURUL HUDA</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="pp.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Video Section -->
+<div id="videoSection">
+    <h1>MASJID NURUL HUDA</h1> 
+    <!-- Ganti URL video YouTube di bawah ini -->
+    <iframe width="315" height="560" src="vvv.mp4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- Bank Information Section -->
+<div id="bankSection">
+    <h2>PANITIA PEMBANGUNAN MASJID NURUL HUDA</h2>
+    <h4>Kp.Cikulur Masjid, RT.002/RW.004, Kel.Serang, Kec.Serang, Kota Serang Provinsi Banten</h4>
+    <p>Silahkan salin nomor rekening berikut untuk melakukan donasi :</p>
+    <p>Bank BJB</p>
+    <div class="input-group mb-3">
+        <input type="text" id="bankAccount" class="form-control" value="0133202366100" readonly>
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button" onclick="copyToClipboard()">Salin</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function copyToClipboard() {
+        var bankAccount = document.getElementById("bankAccount");
+        bankAccount.select();
+        document.execCommand("copy");
+        alert("Nomor rekening telah disalin ke clipboard!");
+    }
+</script>
+</body>
+</html>
